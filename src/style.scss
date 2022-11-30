@@ -8,8 +8,7 @@
 .App{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 0rem 2rem;    
+    align-items: center;  
 }
 .container{
     width: 100%;
@@ -30,8 +29,15 @@
   gap: 30px;
   width: 100%;
 
+
+
   &-h1 {
     font-weight: 400;
+    @media (max-width: 768px) {
+      &{
+        font-size: 18px;
+      }
+    }
   }
 
   &-div {
@@ -40,6 +46,12 @@
     grid-template-columns: 1fr .5fr;
     padding: 0rem 2rem;
     gap: 15px;
+    @media (max-width: 768px) {
+      &{
+        display: flex;
+        flex-direction: column;
+      }
+    }
   }
 
   &-input {
@@ -58,6 +70,12 @@
     border-radius: 5px;
     outline: none;
     border: none;
+    
+    @media (max-width: 768px) {
+      &{
+        padding: .5rem;
+      }
+    }
   }
 }
 
@@ -69,7 +87,6 @@
   justify-content: space-between;
   border-radius: 6px;
   overflow: hidden;
-
   &-img{
     width: 17.5rem;
     height: 11.25rem;
@@ -80,12 +97,6 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-  }
-  &-likes{
-  
-  }
-  &-views{
-  
   }
   &-backgroundButton{
     background: rgb(236, 235, 235);
@@ -105,6 +116,7 @@
     cursor: pointer;
   }
 }
+
 .result-container{
   display: flex;
   flex-wrap: wrap;
