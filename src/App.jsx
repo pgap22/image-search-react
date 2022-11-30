@@ -3,7 +3,7 @@ import Results from "./components/Results";
 import SearchBox from "./components/SearchBox";
 
 const App = () => {
-  const KEY = "22472227-1f992e35c74ba4fca0c4153b2";
+  const KEY = import.meta.env.VITE_API_KEY;
   const BASE_URL = "https://pixabay.com/api";
 
   const [query, changeQuery] = useState("");
