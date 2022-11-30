@@ -4,7 +4,7 @@ import SearchBox from "./components/SearchBox";
 
 const App = () => {
   const KEY = import.meta.env.VITE_API_KEY;
-  const BASE_URL = "https://pixabay.com/api";
+  const BASE_URL = import.meta.env.VITE_BASE_URL;
 
   const [query, changeQuery] = useState("");
   
